@@ -1,0 +1,97 @@
+package RequestResult;
+
+/**
+ * The class to hold the request from the Family Map Client
+ * to the Family Map Server from the login web API.
+ */
+public class RegisterRequest
+{
+    /**
+     * the username from the request from the Register API for the Family Map Client
+     */
+    private String username;
+    /**
+     * the password from the request from the Register API for the Family Map Client
+     */
+    private String password;
+    /**
+     * the email from the request from the Register API for the Family Map Client
+     */
+    private String email;
+    /**
+     * the first name from the request from the Register API for the Family Map Client
+     */
+    private String firstName;
+    /**
+     * the last name from the request from the Register API for the Family Map Client
+     */
+    private String lastName;
+    /**
+     * the gender from the request from the Register API for the Family Map Client
+     */
+    private String gender;
+
+    /**
+     * Constructs RegisterRequest object to hold the data from the request from the Register API for the Family Map Client
+     * @param username the username from the request
+     * @param password the password from the request
+     * @param email the email from the request
+     * @param firstName the first name from the request
+     * @param lastName the last name from the request
+     * @param gender the gender from the request
+     */
+    public RegisterRequest(String username, String password, String email,
+                           String firstName, String lastName, String gender)
+    {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+    }
+
+    public RegisterRequest() {}
+    public String getUsername() {
+        return username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public String getGender() {
+        return gender;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+}

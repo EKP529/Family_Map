@@ -1,0 +1,203 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:stretchColumns="3"
+        tools:context=".Activities.MainActivity">
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/server_host_label" />
+
+            <EditText
+                android:id="@+id/server_host"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/server_host_hint"
+                android:inputType="text"
+                android:textColorHint="@color/grey_hint"
+                android:autofillHints="10.0.0.220" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/server_port_label" />
+
+            <EditText
+                android:id="@+id/server_port"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/server_port_hint"
+                android:inputType="number"
+                android:textColorHint="@color/grey_hint"
+                android:autofillHints="8080" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/username_label" />
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/username_hint"
+                android:inputType="text"
+                android:textColorHint="@color/grey_hint"
+                android:importantForAutofill="no" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/password_label" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textColorHint="@color/grey_hint"
+                android:importantForAutofill="no" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/first_name_label" />
+
+            <EditText
+                android:id="@+id/first_name"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/first_name_hint"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/grey_hint"
+                android:importantForAutofill="no" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/last_name_label" />
+
+            <EditText
+                android:id="@+id/last_name"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/last_name_hint"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/grey_hint"
+                android:importantForAutofill="no" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/email_label" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_span="3"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/grey_hint"
+                android:importantForAutofill="no" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="@string/gender_label" />
+
+            <RadioGroup
+                android:id="@+id/genders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male_label" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female_label" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/sign_in"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sign_in_button"
+                android:textColor="@color/teal_700" />
+
+            <Button
+                android:id="@+id/register"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_button"
+                android:textColor="@color/teal_700" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
